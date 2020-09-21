@@ -1,0 +1,20 @@
+# Path of the file to read
+iowa_file_path = '../input/home-data-for-ml-course/train.csv'
+
+# Fill in the line below to read the file into a variable home_data
+home_data = pd.read_csv(iowa_file_path)
+
+# Print summary statistics in next line
+home_data.describe()
+
+#Print number of rows and columns of a dataframe 
+home_data.shape
+
+# Print a particular columns
+home_data['LotFrontage'].head(5)
+
+# Print Top 5 rows
+home_data.head(5)
+
+# Find min, max, mean, round to up, down , nearest into
+# convert float to int
